@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page_description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#efefef"
+    tools:context=".ProfileDescription">
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#305191"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:text="@string/description_title"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#ffffff"
+        android:background="#305191"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:fontFamily="sans-serif-black" />
+
+    <Button
+        android:id="@+id/line"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:text="@string/action_sign_in"
+        android:background="#000000"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null"
+        android:id="@+id/background_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/description_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <!-- Name Description and Fill-in" -->
+            <TextView
+                android:id="@+id/name_description"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:text="@string/name_description"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp"
+                android:typeface="normal"
+                app:fontFamily="sans-serif-black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp">
+
+                <EditText
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:id="@+id/name_submission"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@layout/layout"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Birth Date Description and Fill-in" -->
+            <TextView
+                android:id="@+id/birth_date_description"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:text="@string/birth_date_description"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:fontFamily="sans-serif-black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp">
+                <EditText
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:id="@+id/birth_date_submission"
+                    android:background="@layout/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Job Title Description and Fill-in" -->
+            <TextView
+                android:id="@+id/job_title_description"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:text="@string/job_title_description"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:fontFamily="sans-serif-black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp">
+                <EditText
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:id="@+id/job_title_submission"
+                    android:background="@layout/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Favorite Food Description and Fill-in" -->
+            <TextView
+                android:id="@+id/favorite_food_description"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:text="@string/favorite_food_description"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:fontFamily="sans-serif-black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp">
+                <EditText
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:id="@+id/favorite_food_submission"
+                    android:background="@layout/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Description Description and Fill-in" -->
+            <TextView
+                android:id="@+id/description_description"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:text="@string/description_description"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:fontFamily="sans-serif-black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp">
+
+                <EditText
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:id="@+id/description_submission"
+                    android:background="@layout/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:inputType="textMultiLine"
+                    android:minHeight="120dp"
+                    android:maxLines="7"
+                    android:singleLine="false" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/gender_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pronoun_description"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    app:fontFamily="sans-serif-black" />
+                <RadioButton
+                    android:id="@+id/male_radio_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender_one"/>
+                <RadioButton
+                    android:id="@+id/female_radio_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender_two"/>
+                <RadioButton
+                    android:id="@+id/other_radio_selection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender_three"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/profile_description_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#ffa366"
+                android:text="@string/action_submit"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
