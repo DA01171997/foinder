@@ -24,7 +24,7 @@ import java.util.ArrayList;
 public class DisplayRestaurants extends AppCompatActivity {
 
     private ListView mListView;
-    private static final String API_KEY = "AIzaSyAuZoQFwnEcbfgu94Wl8YWtuMuKaj8p6Ak";
+    private static final String API_KEY = "YOUR KEY";
 
     private static final String PLACES_API_BASE = "https://maps.googleapis.com/maps/api/place";
 
