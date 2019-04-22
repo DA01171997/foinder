@@ -26,17 +26,7 @@ public class ProfileDescription extends AppCompatActivity {
 
         mGenderRadioGroup = (RadioGroup) findViewById(R.id.gender_radio_group);
         mGenderRadioGroup.clearCheck();
-        /*
-        mGenderRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton rb = (RadioButton) group.findViewById(checkedId);
-                if (rb != null && checkedId > -1){
-                    Toast.makeText(ProfileDescription.this, rb.getText(), Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-        */
+
         Button mProfileSubmissionButton = (Button) findViewById(R.id.profile_description_button);
         mProfileSubmissionButton.setOnClickListener(new View.OnClickListener() {
             @Override
