@@ -1,4 +1,6 @@
 <?php
+
+//Update user information 
 require "conn.php";
 $name = isset($_POST['name']) ? $_POST['name'] : '';
 $user_id = isset($_POST['userID']) ? $_POST['userID'] : '';
