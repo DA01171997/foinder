@@ -1,4 +1,5 @@
 <?php
+//Used to check if email is available to sign up
 require "conn.php";
 $user_email = isset($_POST['email']) ? $_POST['email'] : '';
 $mysql_query = "SELECT u.name, u.userID FROM user_data AS u  
