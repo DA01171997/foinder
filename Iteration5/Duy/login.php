@@ -1,5 +1,6 @@
 <?php
 require "conn.php";
+//this validate user login info
 $user_email = isset($_POST['email']) ? $_POST['email'] : '';
 $user_password = isset($_POST['password']) ? $_POST['password'] : '';
 $salt = 12;
