@@ -1,4 +1,5 @@
 <?php
+//this contains crucial login info, must contains this file where the server is
 $db_name="user";
 $mysql_username = "";
 $mysql_password = "";
