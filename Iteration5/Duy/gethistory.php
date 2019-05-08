@@ -1,4 +1,5 @@
 <?php
+//This is used to get all the places that the user swiped right from
 require "conn.php";
 $user_id = isset($_POST['userID']) ? $_POST['userID'] : '';
 $option = isset($_POST['option']) ? $_POST['option'] : '';
