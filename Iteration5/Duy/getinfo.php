@@ -1,4 +1,5 @@
 <?php
+//this is used to get user information, when they they pressed the update option in the menu, it will pull and display what their info is
 require "conn.php";
 $user_id = isset($_POST['userID']) ? $_POST['userID'] : '';
 $option = isset($_POST['option']) ? $_POST['option'] : '';
