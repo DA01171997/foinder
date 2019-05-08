@@ -1,4 +1,5 @@
 <?php
+//this is useed to register and insert user info into the database
 require "conn.php";
 $name = isset($_POST['name']) ? $_POST['name'] : '';
 $user_email = isset($_POST['email']) ? $_POST['email'] : '';
